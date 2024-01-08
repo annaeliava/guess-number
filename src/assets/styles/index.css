@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FCE77D;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3em;
+    color: #F96167;
+}
+
+/* правила игры */
+
+#container-instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.instruction__title {
+    font-weight: 600;
+}
+
+.instruction__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.instruction__btn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #F96167;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #F96167;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* диапазон */
+
+#container-range {
+    width: 100%;
+    padding: 0 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.container__range__btn {
+    width: 100%;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.range__item {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F96167;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range__item:hover {
+    font-weight: 600;
+}
+
+/* игра */
+
+#container-game {
+    width: 100%;
+    padding: 0 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+#game-title {
+    height: 40px;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+}
+
+.container__btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container__guess {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn__game {
+    width: 60px;
+    height: 40px;
+    font-family: inherit;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#btn-restart {
+    border: none;
+}
+
+#btn-back,
+#btn-instructions {
+    border-radius: 5px;
+}
+
+.btn__img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn-guess {
+    border:  none;
+}
+
+#guess {
+    width: 20%;
+    height: 40px;
+    padding: 2px;
+    font-size: 36px;
+    border: 2px solid #F96167;
+    border-radius: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+#guess:focus {
+    outline: none;
+}
+
+.attempts {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #4831D4;
+}
